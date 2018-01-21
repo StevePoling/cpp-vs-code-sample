@@ -13,7 +13,7 @@ class Calculator
 
 int Calculator::Calculate(int term1, int term2, char oper)
 {
-    switch(oper)
+    switch (oper)
     {
     case '+':
         return term1 + term2;
@@ -39,12 +39,12 @@ int main()
 {
     //cout << "Hello world" << endl;
     cout << "Please enter term1 operator term2" << endl;
-    
+
     int term1, term2;
     char oper;
     cin >> term1 >> oper >> term2;
     Calculator c;
-    int result = c.Calculate(term1,term2,oper);
+    int result = c.Calculate(term1, term2, oper);
     cout << "Result is " << result << endl;
 
     cin.ignore();
