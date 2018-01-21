@@ -4,7 +4,8 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++ -g hello.cpp -o hello",
+            // make much?
+            "command": "${workspaceRoot}/.vscode/build.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
