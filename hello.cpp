@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 // reference c++ setup under VS Code
 
@@ -22,6 +23,8 @@ int Calculator::Calculate(int term1, int term2, char oper)
         return term1 * term2;
     case '/':
         return term1 / term2;
+    case '^':
+        return pow(term1, term2);
     default:
         cin >> term1 >> oper >> term2;
         return Calculate(term1, term2, oper);
